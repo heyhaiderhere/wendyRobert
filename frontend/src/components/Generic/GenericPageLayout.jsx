@@ -52,12 +52,23 @@ const GenericPageLayout = ({ elements, type }) => {
                 </a>
               </span>
             </div>
-            <div>
+            <div
+              style={{
+                height: 800,
+                overflow: "scroll",
+              }}
+            >
               {/* <TwitterTimelineEmbed
                 sourceType="profile"
                 userId={"396007183"}
                 options={{ height: 800 }}
               /> */}
+              <a
+                class="twitter-timeline"
+                href="https://twitter.com/dryouthbooster?ref_src=twsrc%5Etfw"
+              >
+                Tweets by dryouthbooster
+              </a>
             </div>
           </div>
         </div>
