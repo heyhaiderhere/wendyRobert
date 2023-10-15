@@ -90,7 +90,7 @@ const Home = () => {
               <iframe
                 src="https://www.youtube.com/embed/J5Rk2tchDts?autoplay=0&amp;rel=0"
                 frameborder="0"
-                allowfullscreen="1"
+                allowFullScreen={true}
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               ></iframe>
             </div>
@@ -164,8 +164,15 @@ const Home = () => {
                   office. She has my vote for "best doctor" ever!"
                 </em>
               </p>
-              <Link to={""} className="learnmore-btn">
-                View Gallery
+              <h4
+                style={{
+                  fontSize: 22,
+                }}
+              >
+                - Nikki H. Santa Barbara
+              </h4>
+              <Link to={"patient-stories"} className="learnmore-btn">
+                Patient Stories
               </Link>
             </div>
             <div className="patient-story-col-1">
@@ -177,7 +184,7 @@ const Home = () => {
                 <img className="stories-img" src={mag2} alt="" />
               </div>
               <Link to={""} className="learnmore-btn">
-                View Gallery
+                View More
               </Link>
             </div>
           </div>

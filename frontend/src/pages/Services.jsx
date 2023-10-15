@@ -2,9 +2,7 @@ import React from "react";
 import banner from "../assets/images/services-banner.jpg";
 import { Link } from "react-router-dom";
 import { services } from "../pageData/services";
-import usePageTitle from "../hooks/usePageTitle";
 const Services = () => {
-  usePageTitle("services");
   return (
     <div className="services-wrapper">
       <img src={banner} alt="" />

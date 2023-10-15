@@ -2,26 +2,27 @@ import React, { useEffect, useRef, useState } from "react";
 import HeaderImage from "../../assets/images/header-image.jpeg";
 import LogoImage from "../../assets/images/logo-footer.png";
 import { Link } from "react-router-dom";
+import { SocialMedia } from "../reusbles";
 
 const Header = () => {
   const navRef = useRef();
   // const menuRef = useRef();
   const [callDisplay, setCallDisplay] = useState("none");
-  // useEffect(() => {
-  //   const sticky = navRef?.current?.offsetTop;
-  //   window.addEventListener("scroll", (e) => {
-  //     console.log(sticky, window.pageYOffset);
-  //     // console.log(navRef.current.classList.add("apple"));
-  //     const navbar = navRef.current;
-  //     if (window.pageYOffset >= sticky) {
-  //       navbar.classList.add("sticky");
-  //       setCallDisplay("block");
-  //     } else {
-  //       navbar.classList.remove("sticky");
-  //       setCallDisplay("none");
-  //     }
-  //   });
-  // }, []);
+  useEffect(() => {
+    const sticky = navRef?.current?.offsetTop;
+    window.addEventListener("scroll", (e) => {
+      console.log(sticky, window.pageYOffset);
+      // console.log(navRef.current.classList.add("apple"));
+      const navbar = navRef.current;
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        setCallDisplay("block");
+      } else {
+        navbar.classList.remove("sticky");
+        setCallDisplay("none");
+      }
+    });
+  }, []);
 
   const handleTogle = () => {
     const navbar = navRef.current;
@@ -30,7 +31,11 @@ const Header = () => {
   return (
     <>
       <div className="header-image-container">
-        <div>
+        <div
+          style={{
+            overflow: "hidden",
+          }}
+        >
           <img className="header-image" src={HeaderImage} alt="" />
         </div>
         <div className="header-logo-container">
@@ -38,36 +43,7 @@ const Header = () => {
           <a className="telephone" href="tel:7603464262">
             760-346-4262
           </a>
-          <div className="socialicons lazyloaded">
-            <a
-              href="http://www.facebook.com/pages/Dr-Wendy-E-Roberts-MD/208899759183376"
-              target="_blank"
-              rel="noopener"
-            >
-              <i className="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a
-              href="https://twitter.com/dryouthbooster"
-              target="_blank"
-              rel="noopener"
-            >
-              <i className="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a
-              href="https://www.google.com/maps?ll=33.791462,-116.405454&amp;z=13&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=1977161187082865093"
-              target="_blank"
-              rel="noopener"
-            >
-              <i className="fa fa-google-plus" aria-hidden="true"></i>
-            </a>
-            <a
-              href="http://www.yelp.com/biz/wendy-roberts-md-rancho-mirage"
-              target="_blank"
-              rel="noopener"
-            >
-              <i className="fa fa-yelp" aria-hidden="true"></i>
-            </a>
-          </div>
+          <SocialMedia />
         </div>
       </div>
 
@@ -94,34 +70,34 @@ const Header = () => {
           <Link to={"/"}>
             <li>Home</li>
           </Link>
-          <Link to={""}>
+          <Link to={"our-office"}>
             <li>Our Office</li>
           </Link>
           <Link to={"services"}>
             <li>Services</li>
           </Link>
-          <Link to={""}>
+          <a href="https://generationaldermatology.com" target="blank">
             <li>GDERM</li>
-          </Link>
-          <Link to={""}>
+          </a>
+          <Link to={"wink"}>
             <li>wink</li>
           </Link>
-          <Link to={""}>
+          <Link to={"gallery"}>
             <li>Gallery</li>
           </Link>
-          <Link to={""}>
+          <Link to={"in-the-media"}>
             <li>In the media</li>
           </Link>
-          <Link to={""}>
+          <Link to={"blog"}>
             <li>blog</li>
           </Link>
-          <Link to={""}>
+          <Link to={"reviews"}>
             <li>reviews</li>
           </Link>
-          <Link to={""}>
+          <Link to={"travel"}>
             <li>Travel</li>
           </Link>
-          <Link to={""}>
+          <Link to={"contact"}>
             <li>Contact</li>
           </Link>
           <a

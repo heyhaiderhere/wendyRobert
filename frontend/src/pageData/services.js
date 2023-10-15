@@ -80,5 +80,75 @@ const services = [
     path: "WRINKLES-FINE-LINES",
   },
 ];
+const gallery = [
+  {
+    name: "ACNE/ACNE SCARRING",
+    path: "ACNE-SCARRING",
+  },
+  {
+    name: "ALOPECIA",
+    path: "ALOPECIA",
+  },
+  {
+    name: "BIRTH MARK REMOVAL",
+    path: "BIRTH-MARK-REMOVAL",
+  },
+  {
+    name: "NEUROTOXIN",
+    path: "NEUROTOXIN",
+  },
+  {
+    name: "CO2 LIFT",
+    path: "CO2-LIFT",
+  },
+  {
+    name: "EYE REJUVENATION",
+    path: "EYE-REJUVENATION",
+  },
+  {
+    name: "FILLERS",
+    path: "FILLERS",
+  },
+  {
+    name: "FRAXEL",
+    path: "FRAXEL",
+  },
+  {
+    name: "HAIR GROWTH",
+    path: "HAIR-GROWTH",
+  },
+  {
+    name: "HYPERPIGMENTATION",
+    path: "HYPERPIGMENTATION",
+  },
+  {
+    name: "LASER RESURFACING",
+    path: "LASER-RESURFACING",
+  },
+  {
+    name: "LIPS",
+    path: "LIPS",
+  },
+  {
+    name: "LIQUID FACE LIFT",
+    path: "LIQUID-FACE-LIFT",
+  },
+  {
+    name: "MELASMA",
+    path: "MELASMA",
+  },
+  {
+    name: "SCLEROTHERAPY",
+    path: "SCLEROTHERAPY",
+  },
+  {
+    name: "SKIN TIGHTENING",
+    path: "SKIN-TIGHTENING",
+  },
+  {
+    name: "NECK REJUVENATION",
+    path: "NECK-REJUVENATION",
+  },
+];
 
-export { services };
+export { services, gallery };

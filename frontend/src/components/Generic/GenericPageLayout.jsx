@@ -4,23 +4,22 @@ import { elements } from "../../pageData/pageData";
 import { useParams } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { ConsultationPlaner } from "../header";
-const GenericPageLayout = () => {
-  const { pageName } = useParams();
-  console.log(pageName);
-
-  const content = elements.filter((element) => {
-    return element?.pageRoute?.toLowerCase() === pageName?.toLowerCase();
-  });
+const GenericPageLayout = ({ elements, type }) => {
+  console.log(elements, "sdf");
   return (
     <div className="generic-wrapper">
-      {content.length > 0 ? (
+      {elements?.length > 0 ? (
         <div className="generic-container">
-          <GenericElementBuilder elements={content[0]} />
+          {type === "blog" ? (
+            <GenericElementBuilder elements={elements} type={type} />
+          ) : (
+            <GenericElementBuilder elements={elements[0]} />
+          )}
           <div className="generic-col-2">
             <div className="red-carpet">
               <ConsultationPlaner extraClass="service-consultation" />
             </div>
-            {/* <div className="red-carpet">
+            <div className="red-carpet">
               <span
                 className="yelp-review"
                 data-review-id="VXIPOR6LetJ9oNW7iKRwDg"
@@ -52,14 +51,8 @@ const GenericPageLayout = () => {
                   Yelp
                 </a>
               </span>
-            </div> */}
+            </div>
             <div>
-              {/* <a
-                className="twitter-timeline"
-                href="https://twitter.com/dryouthbooster?ref_src=twsrc%5Etfw"
-              >
-                Tweets by dryouthbooster
-              </a> */}
               {/* <TwitterTimelineEmbed
                 sourceType="profile"
                 userId={"396007183"}
