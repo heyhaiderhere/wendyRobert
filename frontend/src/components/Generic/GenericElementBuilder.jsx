@@ -12,8 +12,10 @@ import {
   SocialMedia,
 } from "../reusbles";
 import { Link } from "react-router-dom";
+import { Review } from "../review";
 
 const GenericElementBuilder = ({ elements, type }) => {
+  console.log(elements, "haider ali");
   return type === "blog" ? (
     <div>
       {elements?.map((element, i) => {
@@ -52,6 +54,8 @@ const GenericElementBuilder = ({ elements, type }) => {
         );
       })}
     </div>
+  ) : type === "review" ? (
+    <Review elements={elements} />
   ) : (
     <div>
       {elements?.heading && (

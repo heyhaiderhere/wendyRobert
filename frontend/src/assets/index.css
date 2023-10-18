@@ -539,6 +539,10 @@ nav {
 .bf-result-container {
   display: flex;
   gap: 0.5rem;
+  /* width: 100vw; */
+}
+.bf-result-container .story-stars {
+  width: 100%;
 }
 .patient-story-col-1 {
   display: flex;

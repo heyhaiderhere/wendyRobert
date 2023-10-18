@@ -11,6 +11,7 @@ import {
   Blogs,
   Gallery,
   GalleryBuilder,
+  ReviewBuilder,
   ServiceBuilder,
   Services,
 } from "../pages";
@@ -34,6 +35,10 @@ const Routes = () => {
           <Route element={<ServiceBuilder param={"map"} />} path="/contact" />
           <Route element={<ServiceBuilder param={"travel"} />} path="/travel" />
           <Route element={<ServiceBuilder param={"wink"} />} path="/wink" />
+          <Route
+            element={<ReviewBuilder param={"reviews"} />}
+            path="/reviews"
+          />
           <Route
             element={<ServiceBuilder param={"in-the-media"} />}
             path="/in-the-media"

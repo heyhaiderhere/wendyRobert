@@ -9,7 +9,12 @@ const Quote = ({ element }) => {
         }}
         className="blockquote"
       >
-        <p className="simple-paragraph left-align ">{quote}</p>
+        <p
+          style={{ width: "fit-content" }}
+          className="simple-paragraph left-align "
+        >
+          {quote}
+        </p>
       </blockquote>
     );
   });

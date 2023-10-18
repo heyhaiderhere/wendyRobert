@@ -1313,6 +1313,48 @@ const elements = [
       },
     ],
   },
+  {
+    pageRoute: "reviews",
+    heading: "Reviews",
+    headingDescription: "Average Rating: 5",
+    content: [
+      {
+        title: "Hair",
+        author: "Katherine Graham",
+        review: [
+          `I visited Dr Roberts office for the first time this year. I found Dr Roberts to be a very kind, understanding and compassionate doctor, who really listened to me regarding my hair loss.. I started treatments with Dr Roberts and always felt very comfortable with what to expect during any procedures. Her staff is extremely kind and attentive. I feel very fortunate that I found Dr Robert’s office, and would highly recommend this wonderful doctor .`,
+        ],
+      },
+      {
+        title: "Eyebrow tinting",
+        author: "Marilyn Cushing",
+        review: [
+          `I chose Wink because of its great reviews. I’d like to add one more! Laurie tinted my eyebrows........I had wanted only the hairs colored, not the skin. She did them perfectly. In fact, no one would guess that they weren’t my natural brows. I live in the Chicago area and only in Palm Desert in March. I will definitely plan to go there next year......and maybe have more done.`,
+        ],
+      },
+      {
+        title: "Eyebrow tinting",
+        author: "Marilyn Cushing",
+        review: [
+          `I chose Wink because of its great reviews. I’d like to add one more! Laurie tinted my eyebrows........I had wanted only the hairs colored, not the skin. She did them perfectly. In fact, no one would guess that they weren’t my natural brows. I live in the Chicago area and only in Palm Desert in March. I will definitely plan to go there next year......and maybe have more done.`,
+        ],
+      },
+      {
+        title: "Saved Me",
+        author: "Anonymous",
+        review: [
+          `A couple months ago, I got the worst sunburn of my life – fell asleep in my backyard one of those first nice warm days end of feb:( I went to my doc, and he said it would probably leave scars or spots or be blotchy. So I called Wendy, and she squeezed me in next day. She was sooo nice, and reassured me that it would be okay. I had to go in a few times – never waited more than 10 min, and the treatments never hurt a bit.`,
+        ],
+      },
+      {
+        title: "Miracle Worker",
+        author: "Anonymous",
+        review: [
+          `I was getting ready for a job interview this morning, and looked in the mirror, and thought about my face a couple months ago… I had to call Wendy and thank her, and come here to tell everyone what a miracle worker she is!`,
+        ],
+      },
+    ],
+  },
 ];
 const galleryElements = [
   {

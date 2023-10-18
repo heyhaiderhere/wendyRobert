@@ -77,14 +77,13 @@ const Footer = () => {
             width: "80%",
           }}
         >
-          <span>© 2023 Crystal Clear Digital Marketing | </span>
+          <span>© 2023 Wendy Robarts, MD </span>
           <Link>Site Map</Link>
           <span> | </span>
           <Link>TOS/Privacy Policy</Link>
           <span> | </span>
           <Link>Wendy Roberts, MD</Link>
         </div>
-        <img src={footerLogo} alt="" />
       </div>
     </footer>
   );

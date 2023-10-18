@@ -30,7 +30,17 @@ const Home = () => {
           </div>
 
           <div className="testemonials-container">
-            <Link to={""} className="testemonial-link">
+            <Link
+              onClick={() => [
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                }),
+              ]}
+              to={"services/LIQUID-FACELIFT"}
+              className="testemonial-link"
+            >
               <div className="testemonial">
                 <img src={slide1} alt="" />
                 <div className="testemonial-heading">
@@ -43,40 +53,70 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <Link to={""} className="testemonial-link">
+            <Link
+              onClick={() => [
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                }),
+              ]}
+              to={"services/BOTOX-AND-DYSPORT"}
+              className="testemonial-link"
+            >
               <div className="testemonial">
                 <img src={slide3} alt="" />
                 <div className="testemonial-heading">
                   <h2 className="trajan-heading">
-                    Liquid
+                    Face
                     <br />
-                    <span className="trajan">Facelift</span>
+                    <span className="trajan">Injectables</span>
                   </h2>
                   <p className="learnmore">Learn More</p>
                 </div>
               </div>
             </Link>
-            <Link to={""} className="testemonial-link">
+            <Link
+              onClick={() => [
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                }),
+              ]}
+              to={"services/HAIR-RESTORATION"}
+              className="testemonial-link"
+            >
               <div className="testemonial">
                 <img src={slide2} alt="" />
                 <div className="testemonial-heading">
                   <h2 className="trajan-heading">
-                    Liquid
+                    Hair
                     <br />
-                    <span className="trajan">Facelift</span>
+                    <span className="trajan">Restoration</span>
                   </h2>
                   <p className="learnmore">Learn More</p>
                 </div>
               </div>
             </Link>
-            <Link to={""} className="testemonial-link">
+            <Link
+              onClick={() => [
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                }),
+              ]}
+              to={"services/EXILIS"}
+              className="testemonial-link"
+            >
               <div className="testemonial">
                 <img src={slide4} alt="" />
                 <div className="testemonial-heading">
                   <h2 className="trajan-heading">
-                    Liquid
+                    Body
                     <br />
-                    <span className="trajan">Facelift</span>
+                    <span className="trajan">Countring</span>
                   </h2>
                   <p className="learnmore">Learn More</p>
                 </div>
@@ -123,7 +163,17 @@ const Home = () => {
                 opportunity to fuel proactive decision making when it comes to
                 sun safety and skin awareness." - Dr. Roberts
               </p>
-              <Link to={""} className="learnmore-btn">
+              <Link
+                onClick={() => [
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  }),
+                ]}
+                to={""}
+                className="learnmore-btn"
+              >
                 Learn More
               </Link>
             </div>
@@ -139,7 +189,17 @@ const Home = () => {
                 <img className="stories-img" src={beforeImg} alt="" />
                 <img className="stories-img" src={afterImg} alt="" />
               </div>
-              <Link to={""} className="learnmore-btn">
+              <Link
+                onClick={() => [
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  }),
+                ]}
+                to={""}
+                className="learnmore-btn"
+              >
                 View Gallery
               </Link>
             </div>
@@ -149,7 +209,7 @@ const Home = () => {
                 Patient Stories
               </h1>
               <div className="bf-result-container">
-                <img src={stars} alt="" />
+                <img className="story-stars" src={stars} alt="" />
               </div>
               <p
                 style={{
@@ -171,7 +231,17 @@ const Home = () => {
               >
                 - Nikki H. Santa Barbara
               </h4>
-              <Link to={"patient-stories"} className="learnmore-btn">
+              <Link
+                onClick={() => [
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  }),
+                ]}
+                to={"patient-stories"}
+                className="learnmore-btn"
+              >
                 Patient Stories
               </Link>
             </div>
@@ -183,7 +253,17 @@ const Home = () => {
                 <img className="stories-img" src={mag1} alt="" />
                 <img className="stories-img" src={mag2} alt="" />
               </div>
-              <Link to={""} className="learnmore-btn">
+              <Link
+                onClick={() => [
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  }),
+                ]}
+                to={"in-the-media"}
+                className="learnmore-btn"
+              >
                 View More
               </Link>
             </div>

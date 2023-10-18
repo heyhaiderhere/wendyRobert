@@ -12,6 +12,8 @@ const GenericPageLayout = ({ elements, type }) => {
         <div className="generic-container">
           {type === "blog" ? (
             <GenericElementBuilder elements={elements} type={type} />
+          ) : type === "review" ? (
+            <GenericElementBuilder elements={elements[0]} type={type} />
           ) : (
             <GenericElementBuilder elements={elements[0]} />
           )}

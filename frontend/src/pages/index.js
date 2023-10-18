@@ -5,6 +5,7 @@ import Gallery from "./Gallery";
 import GalleryBuilder from "./GalleryBuilder";
 import BlogBuilder from "./BlogBuilder";
 import Blogs from "./Blogs";
+import ReviewBuilder from "./ReviewBuilder";
 export {
   Services,
   ServiceBuilder,
@@ -13,4 +14,5 @@ export {
   GalleryBuilder,
   BlogBuilder,
   Blogs,
+  ReviewBuilder,
 };
