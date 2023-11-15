@@ -66,7 +66,7 @@ const GenericPageLayout = ({ elements, type }) => {
                 options={{ height: 800 }}
               /> */}
               <a
-                class="twitter-timeline"
+                className="twitter-timeline"
                 href="https://twitter.com/dryouthbooster?ref_src=twsrc%5Etfw"
               >
                 Tweets by dryouthbooster

@@ -6,13 +6,10 @@ import { SocialMedia } from "../reusbles";
 
 const Header = () => {
   const navRef = useRef();
-  // const menuRef = useRef();
   const [callDisplay, setCallDisplay] = useState("none");
   useEffect(() => {
     const sticky = navRef?.current?.offsetTop;
     window.addEventListener("scroll", (e) => {
-      console.log(sticky, window.pageYOffset);
-      // console.log(navRef.current.classList.add("apple"));
       const navbar = navRef.current;
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");

@@ -8,8 +8,8 @@ const SingleReview = ({ content }) => {
       <ReviewStars stars={5} />
       <Paragraph
         element={{
-          subHeading: content.title,
-          description: `By ${content.author}`,
+          subHeading: content?.reviewTitle,
+          description: `By ${content?.author}`,
           paraStyles: {
             margin: 0,
           },
@@ -17,7 +17,7 @@ const SingleReview = ({ content }) => {
       />
       <Quote
         element={{
-          quotes: content?.review,
+          quotes: [content?.message],
         }}
       />
     </div>

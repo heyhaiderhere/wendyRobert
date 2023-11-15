@@ -1,9 +1,10 @@
 import React from "react";
 
 const Quote = ({ element }) => {
-  return element?.quotes.map((quote) => {
+  return element?.quotes.map((quote, index) => {
     return (
       <blockquote
+        key={index}
         style={{
           margin: 40,
         }}
