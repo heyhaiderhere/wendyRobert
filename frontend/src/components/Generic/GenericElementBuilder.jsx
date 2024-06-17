@@ -14,8 +14,20 @@ import {
 import { Link } from "react-router-dom";
 import { Review } from "../review";
 
+const elementsLookup = {
+  paragraph: Paragraph,
+  quote: Quote,
+  blog: SingleBlogType,
+  socialMedia: SocialMedia,
+  list: List,
+  map: Iframe,
+  image: Image,
+  imageArray: ImageArray,
+  comparison: Comparison,
+  custom: Custom,
+};
+
 const GenericElementBuilder = ({ elements, type }) => {
-  console.log(elements, "haider ali");
   return type === "blog" ? (
     <div>
       {elements?.map((element, i) => {
@@ -98,29 +110,10 @@ const GenericElementBuilder = ({ elements, type }) => {
       )}
 
       {elements?.content?.map((elem, i) => {
+        const Component = elementsLookup[elem.type];
         return (
           <React.Fragment key={i}>
-            {elem.type === "paragraph" ? (
-              <Paragraph element={elem} />
-            ) : elem.type === "image" ? (
-              <Image element={elem} />
-            ) : elem.type === "imageArray" ? (
-              <ImageArray element={elem} />
-            ) : elem.type === "map" ? (
-              <Iframe element={elem} />
-            ) : elem.type === "quote" ? (
-              <Quote element={elem} />
-            ) : elem.type === "custom" ? (
-              <Custom element={elem} />
-            ) : elem.type === "list" ? (
-              <List element={elem} />
-            ) : elem.type === "comparison" ? (
-              <Comparison element={elem} count={i} />
-            ) : elem.type === "blog" ? (
-              <SingleBlogType element={elem} />
-            ) : elem.type === "socialMedia" ? (
-              <SocialMedia element={elem} />
-            ) : null}
+            <Component element={elem} count={i} />
           </React.Fragment>
         );
       })}

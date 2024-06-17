@@ -160,6 +160,26 @@ import inTheMedia25 from "../assets/images/in-the-media25.jpg";
 import inTheMedia26 from "../assets/images/in-the-media26.jpg";
 import inTheMedia27 from "../assets/images/in-the-media27.jpg";
 import inTheMedia28 from "../assets/images/in-the-media28.jpg";
+import beyondSkinHeading from "../assets/images/home-blog1.png";
+import innovatorHeading1 from "../assets/images/articleImage-1.jpg";
+import innovatorHeading2 from "../assets/images/articleImage-2.jpg";
+import book1 from "../assets/images/book1.jpg";
+import book2 from "../assets/images/book2.jpg";
+import book3 from "../assets/images/book3.jpg";
+import book4 from "../assets/images/book4.jpg";
+import book5 from "../assets/images/book5.jpg";
+import book6 from "../assets/images/book6.jpg";
+import book7 from "../assets/images/book7.jpg";
+import book8 from "../assets/images/book8.jpg";
+import book9 from "../assets/images/book9.jpg";
+import book10 from "../assets/images/book10.jpg";
+import book11 from "../assets/images/book11.jpg";
+import book12 from "../assets/images/book12.jpg";
+import book13 from "../assets/images/book13.jpg";
+import book14 from "../assets/images/book14.jpg";
+import book15 from "../assets/images/book15.jpg";
+import book16 from "../assets/images/book16.jpg";
+import book17 from "../assets/images/book17.jpg";
 
 const elements = [
   {
@@ -1983,6 +2003,116 @@ const blogElements = [
       },
     ],
   },
+  {
+    pageRoute: "Beyond-the-Skin",
+    heading: "Dr. Wendy Roberts, M.D., F.A.A.D.",
+    headingImage: beyondSkinHeading,
+    headingDescription: "",
+    content: [
+      {
+        type: "paragraph",
+        styles: { fontSize: 40 },
+        subHeading:
+          "Dr. Wendy Roberts’ Approach to Exceptional Dermatology and Patient Care",
+        description:
+          "When it comes to women in medicine, double board-certified dermatologist Dr. Wendy Roberts believes there are two key qualities that make women doctors exceptional: compassion and education.",
+      },
+      {
+        type: "paragraph",
+        styles: { fontSize: 40 },
+        subHeading: "",
+        description: `“Environmental compassion is the first quality,” says Dr. Roberts. “To treat the whole patient, and resolve the skin problem, I may have to play part detective, part doctor, and part therapist. And that’s what exceptional women doctors do all day long.” 
+        Dr. Roberts’ journey to becoming an exceptional doctor began with her own experiences. She pursued her dream by attending Stanford University, one of the top medical schools in the country.
+        “I selected the best school for myself so
+        I could provide the best treatments, care and medications for my patients,” says
+        Dr. Roberts. “Excellence in education is so important. When a person starts off with excellence in education, they’re setting themselves, their patients and their medical community up for success.”
+        Her dedication to education and training is evident in her work as a double certified dermatologist. She understands the importance of treating the whole patient and not just the skin problem. Dr. Roberts recognizes the interdependence of different organ systems in the body
+        and uses her knowledge to provide comprehensive care to her patients.
+        “It’s not the same as a car — a living organism is different from a man-made thing,” says Dr. Roberts. “You can work on
+        a car and every mechanic could be good because the car is not changing. But a living organism is always changing, so you really have to have a person who is trained on all the organ systems.”
+        Dr. Roberts’ approach to medicine sets her apart as an exceptional woman in the field. She combines her compassion`,
+      },
+      {
+        type: "paragraph",
+        styles: { fontSize: 40 },
+        subHeading: "",
+        description: `and education to provide her patients with the best care possible. Her journey to becoming a double certified dermatologist and her own personal experiences have shaped her beliefs about what makes a woman doctor exceptional.
+          “I’m not just treating a skin problem, I’m treating a person,” says Dr. Roberts. “And that requires compassion and education. It’s a privilege to be able to provide care to my patients, and I take`,
+      },
+      {
+        type: "paragraph",
+        styles: { fontSize: 40 },
+        subHeading: "",
+        description: `that responsibility seriously.” If you’re looking for an exceptional woman in medicine who truly cares about treating the whole patient, look no further than Dr. Roberts.`,
+      },
+    ],
+  },
+  {
+    pageRoute: "Innovator-in-Nonsurgical-Skin-Cancer-Treatment",
+    heading: "Dr. Wendy Roberts, M.D., F.A.A.D.",
+    headingImage: innovatorHeading2,
+    content: [
+      {
+        type: "paragraph",
+        styles: { fontSize: 40 },
+        subHeading:
+          "Innovator in Nonsurgical Skin Cancer Treatment (Introducing IG-SRT)",
+        description: `Having graduated from Stanford University Medical School and trained in three specialties — surgery, dermatology, and pathology — Dr. Wendy Roberts is a double board-certified dermatologist, New York University fellowship-trained dermatopathologist, and expert in skin cancer education, detection, and treatment. She is inventor of the Roberts Skin Type Classification system, which has been published and used globally to classify different types of skin around the world. Passionate and innovative, Dr. Roberts’ motto is “to leave no stone unturned” until she finds the solution to your specific skin problem.
+        As technology advanced for many skin disorders like psoriasis, lupus, and acne,
+        Dr. Roberts continued searching for a new nonsurgical treatment for non-melanoma skin cancers, also called basal and squamous cell skin cancer. This nonsurgical treatment would be an alternative to surgical excision and specifically Mohs surgery, which was developed in 1936 and popularized in the 1960s. “I just knew that there had to be a newer technology than something developed in the 1960s,” she says. “We don’t even drive the same cars that we did in the ’60s!” She searched and waited and found the technology.
+        Dr Roberts is the first dermatologist to bring Image-Guided Superficial Radiotherapy, or IG-SRT, to the Coachella Valley.
+        Dr. Roberts is a past president of the Desert Palms American Skin Cancer Society, whose statistics reveal about
+        5.4 million basal and squamous cell skin cancers are diagnosed each year in the United States (occurring in about 3.3 million Americans, as some people have more than one). About eight out of 10 of these are basal cell cancers. Squamous cell cancers occur less often. Approximately 2,000 people in the United States die each`,
+      },
+      {
+        type: "image",
+        image: innovatorHeading1,
+      },
+      {
+        type: "paragraph",
+        styles: { fontSize: 40 },
+        subHeading: "",
+        description: `year from these cancers. Late detection contributes to these morbidities and mortalities. Roberts says, “If people weren’t so fearful of surgery, they may come to doctors and seek help earlier.” Finally, in 2019, she
+        found the technology to help her patients have painless skin cancer treatments in her office with no surgery or downtime. IG-SRT is a safe, painless, and effective FDA- approved modality to treat non- melanoma skin cancer such as basal cell carcinoma or squamous cell carcinoma, virtually any place on the body.
+        IG-SRT is not like the radiation used to treat other cancers. IG-SRT is targeted to the superficial
+        layers of the skin only, the areas where the skin cancer sits. It does not affect internal organs or any structures other than the skin cancer.
+        Often IG-SRT is confused with the hospital type of radiation therapy, but they are not the same. The key is that
+        this treatment is superficial. The actual treatment is similar to the process of a dental X-ray. After two years of offering her patients this therapy as an alternative to surgery and seeing the safe and amazing results, Dr. Roberts has once again found the perfect solution for this unmet need
+        of her generational practice. “People live in families and our families have needs that range from skin cancer treatment to aesthetic skin rejuvenation and hair replacement treatments for aging men and women.
+        Dr. Roberts is honored to be chosen for her 18th consecutive year as a Castle Connolly Top Doctors selection. “I love my community and am committed to continued excellence and compassionate problem
+
+        solving in the specialty of dermatology and skin health,” she says. “I simply love what I do and have been trained to embrace management, and medical dermatology.
+        The Dr. Roberts Show is the recipient of the Silver Telly Award in Health and Wellness. vimeo.com/672554126/ c67075060d
+        `,
+      },
+
+      {
+        type: "imageArray",
+        heading: "A TOP DOCTOR FOR 18 CONSECUTIVE YEARS.",
+        styles: { width: "15%" },
+        images: [
+          book1,
+          book2,
+          book3,
+          book4,
+          book5,
+          book6,
+          book7,
+          book8,
+          book9,
+          book10,
+          book11,
+          book12,
+          book13,
+          book14,
+          book15,
+          book16,
+          book17,
+        ],
+      },
+    ],
+  },
+
   {
     pageRoute: "what-is-restylane-lyft-used-for",
     heading: "what-is-restylane-lyft-used-for",

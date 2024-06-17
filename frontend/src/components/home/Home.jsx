@@ -8,6 +8,8 @@ import beforeImg from "../../assets/images/home-before.jpeg";
 import afterImg from "../../assets/images/home-after.jpeg";
 import mag1 from "../../assets/images/Essence-Magazine.jpeg";
 import mag2 from "../../assets/images/nationally-recognized.jpeg";
+import homeBlog1 from "../../assets/images/home-blog1.png";
+import homeBlog2 from "../../assets/images/articleImage-1.jpg";
 import stars from "../../assets/images/stars.png";
 import { Link } from "react-router-dom";
 import { Slider } from "../slider";
@@ -172,6 +174,126 @@ const Home = () => {
                   }),
                 ]}
                 to={""}
+                className="learnmore-btn"
+              >
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="home-video-section">
+          <div className="grid-container col-2">
+            <div className="home-video-section-grid-2">
+              <h2
+                style={{
+                  fontSize: 40,
+                }}
+              >
+                Dr. Wendy Roberts, M.D., F.A.A.D.
+              </h2>
+              <h4
+                style={{
+                  fontSize: 22,
+                }}
+              >
+                Beyond the Skin: Dr. Wendy Roberts Approach to Exceptional
+                Dermatology and Patient Care
+              </h4>
+              <p
+                style={{
+                  fontSize: 20,
+                  fontWeight: 300,
+                  color: "#666666",
+                }}
+              >
+                When it comes to women in medicine, double board-certified
+                dermatologist Dr. Wendy Roberts believes there are two key
+                qualities that make women doctors exceptional: compassion and
+                education. “Environmental compassion is the first quality,” says
+                Dr. Roberts. “To treat the whole patient, and resolve the skin
+                problem, I may have to play part detective, part doctor, and
+                part therapist. And that’s what exceptional women doctors do all
+                day long.”
+              </p>
+              <Link
+                onClick={() => [
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  }),
+                ]}
+                to={"/blog/Beyond-the-Skin"}
+                className="learnmore-btn"
+              >
+                Learn More
+              </Link>
+            </div>
+            <div style={{}}>
+              <img
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+                src={homeBlog1}
+                alt="learn More"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="home-video-section">
+          <div className="grid-container col-2">
+            <div style={{}}>
+              <img
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  // height: "500px",
+                  // objectFit: "cover",
+                }}
+                src={homeBlog2}
+                alt="learn More"
+              />
+            </div>
+            <div className="home-video-section-grid-2">
+              <h2
+                style={{
+                  fontSize: 40,
+                }}
+              >
+                Dr. Wendy Roberts, M.D., F.A.A.D.
+              </h2>
+              <h4
+                style={{
+                  fontSize: 22,
+                }}
+              >
+                Innovator in Nonsurgical Skin Cancer Treatment (Introducing
+                IG-SRT)
+              </h4>
+              <p
+                style={{
+                  fontSize: 20,
+                  fontWeight: 300,
+                  color: "#666666",
+                }}
+              >
+                Having graduated from Stanford University Medical School and
+                trained in three specialties — surgery, dermatology, and
+                pathology — Dr. Wendy Roberts is a double board-certified
+                dermatologist, New York University fellowship-trained
+                dermatopathologist, and expert in skin cancer education,
+                detection, and treatment
+              </p>
+              <Link
+                onClick={() => [
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  }),
+                ]}
+                to={"/blog/Innovator-in-Nonsurgical-Skin-Cancer-Treatment"}
                 className="learnmore-btn"
               >
                 Learn More

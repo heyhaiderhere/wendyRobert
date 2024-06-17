@@ -9,6 +9,7 @@ const ImageArray = ({ element }) => {
         margin: "0 0 20px 0",
       }}
     >
+      <h2>{element?.heading}</h2>
       <div
         style={{
           display: "flex",
@@ -20,7 +21,7 @@ const ImageArray = ({ element }) => {
           return (
             <img
               style={{
-                width: "45%",
+                width: element?.styles?.width ? element.styles.width : "45%",
                 marginBottom: 20,
               }}
               src={image}
