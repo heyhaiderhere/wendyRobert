@@ -179,6 +179,46 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section className="home-video-section">
+          <div className="grid-container col-2">
+            <div className="home-video-section-grid-2">
+              <h2
+                style={{
+                  fontSize: 40,
+                }}
+              >
+                A MoMent of Xen
+              </h2>
+              <Link
+                onClick={() => [
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  }),
+                ]}
+                to={""}
+                className="learnmore-btn"
+              >
+                Learn More
+              </Link>
+            </div>
+            <div
+              style={{
+                height: 380,
+              }}
+              className="home-video-section-grid-1"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/RrCGJhvtyqQ?autoplay=0&amp;rel=0"
+                frameborder="0"
+                height={"500px"}
+                allowFullScreen={true}
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
+            </div>
+          </div>
+        </section>
         <section className="home-patient-stories">
           <div className="grid-container col-3 container">
             <div className="patient-story-col-1">
