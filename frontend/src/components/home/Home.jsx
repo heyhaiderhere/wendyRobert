@@ -229,10 +229,16 @@ const Home = () => {
                 Learn More
               </Link>
             </div>
-            <div style={{}}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <img
                 style={{
-                  width: "100%",
+                  width: "70%",
                   height: "auto",
                 }}
                 src={homeBlog1}
@@ -243,13 +249,17 @@ const Home = () => {
         </section>
         <section className="home-video-section">
           <div className="grid-container col-2">
-            <div style={{}}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <img
                 style={{
-                  width: "100%",
+                  width: "70%",
                   height: "auto",
-                  // height: "500px",
-                  // objectFit: "cover",
                 }}
                 src={homeBlog2}
                 alt="learn More"

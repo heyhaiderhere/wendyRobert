@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { ConsultationPlaner } from "../header";
 const GenericPageLayout = ({ elements, type }) => {
-  console.log(elements, "sdf");
   return (
     <div className="generic-wrapper">
       {elements?.length > 0 ? (
